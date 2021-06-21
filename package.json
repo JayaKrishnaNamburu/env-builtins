@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "node:test": "node --experimental-specifier-resolution=node node.mjs",
+        "browser:test": "http-server ."
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">=14.x"
+    },
+    "dependencies": {
+        "buffer": "^6.0.3",
+        "http-server": "^0.12.3"
+    }
+}
