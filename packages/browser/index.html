@@ -4,17 +4,17 @@
         <script type="importmap">
             {
                 "imports": {
-                  "builtins": "./node_modules/builtins/dist/index.js"
+                  "@example/builtins": "./node_modules/@example/builtins/src/index.js"
                 },
                 "scopes": {
-                  "./node_modules/builtins/": {
-                    "#env": "./node_modules/builtins/src/env.js"
+                  "./node_modules/@example/builtins/": {
+                    "#env": "./node_modules/@example/builtins/src/env.js"
                   }
                 }
               }
         </script>
         <script type="module">
-            import { getEnv } from 'builtins'
+            import { getEnv } from '@example/builtins'
 
             document.getElementById('env').innerHTML = JSON.stringify(getEnv(), null, 2)
         </script>
