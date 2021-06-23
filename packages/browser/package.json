@@ -1,0 +1,16 @@
+{
+    "name": "@example/browser",
+    "version": "0.0.0",
+    "main": "dist/index.js",
+    "type": "module",
+    "engines": {
+        "node": ">=14.x"
+    },
+    "dependencies": {
+        "http-server": "^0.12.3",
+        "@example/builtins": "0.0.0"
+    },
+    "scripts": {
+        "dev": "http-server ."
+    }
+}
